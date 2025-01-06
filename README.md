@@ -63,13 +63,13 @@
             <img src="https://github.com/user-attachments/assets/074ee705-da8b-4191-bc00-1cc1fc0e06ee" alt="Image 1">
             <li>Turn on the machine by pressing the button.</li>
             <img src="https://github.com/user-attachments/assets/6d07bf93-e64c-41fe-b4a8-beb41cfc5d89" alt="Image 2">
-            <li>Place a cup under the coffee outlet.</li>
+            <li>GREEN lights will blink while the machine is heating up.</li>
             <img src="https://github.com/user-attachments/assets/b56e93ed-2ffc-4b88-8b40-48119641b5cf" alt="Image 3">
-            <li>Open the machine head by pushing the lever up.</li>
+            <li>Steady GREEN light indicates the machine is ready.</li>
             <img src="https://github.com/user-attachments/assets/be57d41d-8d43-4777-8400-fd597b61c104" alt="Image 4">
-            <li>Insert a capsule, dome side down.</li>
+            <li>Place a cup under the coffee outlet.</li>
             <img src="https://github.com/user-attachments/assets/207db29c-97f6-4f69-a97e-831b16a8e20f" alt="Image 5">
-            <li>Close the lid by pressing the lever down, then press the button to start brewing.</li>
+            <li>Open the machine head by pushing the lever up.</li>
             <img src="https://github.com/user-attachments/assets/e885f469-35b6-4253-96d4-19fdec67dbeb" alt="Image 6">
         </ol>
         <p>The green light rotates during brewing and becomes steady when your coffee is ready.</p>
