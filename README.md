@@ -59,6 +59,7 @@
 <div class="section">
     <h2>Nespresso Coffee Preparation Guide</h2>
     <ol>
+        <p><strong>Note:</strong> Capsules are to the left in the jar. The automatic motor raises and lowers the machine's head when the lever is pushed up or down.</p>
         <li>Fill the water tank with fresh drinking water.</li>
         <img src="https://github.com/user-attachments/assets/074ee705-da8b-4191-bc00-1cc1fc0e06ee" alt="Image 1">
         <li>Turn on the machine by pressing the button.</li>
@@ -73,10 +74,9 @@
         <img src="https://github.com/user-attachments/assets/e885f469-35b6-4253-96d4-19fdec67dbeb" alt="Image 6">
         <li>Insert a capsule, dome side down.</li>
         <li>Close the lid by pressing the lever down, then press the button to start brewing.</li>
-        <img src="https://github.com/user-attachments/assets/e885f469-35b6-4253-96d4-19fdec67dbeb" alt="Image 6">
     </ol>
     <p>The green light rotates during brewing and becomes steady when your coffee is ready.</p>
-    <p><strong>Note:</strong> Capsules are to the left in the jar. The automatic motor raises and lowers the machine's head when the lever is pushed up or down.</p>
+    
 </div>
     <div class="section" id="lint-filter-cleaning">
         <h2>Lint Filter Cleaning Instructions</h2>
