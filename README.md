@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -59,19 +58,23 @@
     <div class="section">
         <h2>Nespresso Coffee Preparation Guide</h2>
         <ol>
+            <p>Note: Capsules are located to the left in a jar for your convenience.</p>
             <li>Fill the water tank with fresh drinking water.</li>
-            <img src="https://github.com/user-attachments/assets/074ee705-da8b-4191-bc00-1cc1fc0e06ee" alt="Image 1">
+            ![Image 1](https://drive.google.com/uc?id=1iocDlzqvSTV-m81TP0GXe6zR4trIr0sX)
             <li>Turn on the machine by pressing the button.</li>
-            <img src="https://github.com/user-attachments/assets/6d07bf93-e64c-41fe-b4a8-beb41cfc5d89" alt="Image 2">
+            ![Image 2](https://drive.google.com/uc?id=1c-CeoRJv75IbUiVdQ25LqNuiHTA_AQd7)
+            <li>GREEN lights will blink while the machine is heating up.</li>
+            ![Image 3](https://drive.google.com/uc?id=1t9GKjXVp7vT-7k9uK7BIWFG4OBfdN4bP)
+            <li>Steady GREEN light indicates the machine is ready.</li>
+            ![Image 4](https://drive.google.com/uc?id=1FpRrPo0ap8yzqsDo4hpP7fow9JQ0PoCe)
             <li>Place a cup under the coffee outlet.</li>
-            <img src="https://github.com/user-attachments/assets/b56e93ed-2ffc-4b88-8b40-48119641b5cf" alt="Image 3">
-            <li>Open the machine head by pushing the lever up.</li>
-            <img src="https://github.com/user-attachments/assets/be57d41d-8d43-4777-8400-fd597b61c104" alt="Image 4">
+            ![Image 5](https://drive.google.com/uc?id=122EvAd-JOSoSRqSl8CYwLncOZo08pocq)
+            <li>Open the machine head by pushing the lever up. Note: Automatic motor raises and lowers the machine's head by pushing the lever up/down.</li>
+            ![Image 6](https://drive.google.com/uc?id=1K4htLz7D2kmsOOCn2eTHIj4UQ387YK70)
+        
             <li>Insert a capsule, dome side down.</li>
-            <img src="https://github.com/user-attachments/assets/207db29c-97f6-4f69-a97e-831b16a8e20f" alt="Image 5">
             <li>Close the lid by pressing the lever down, then press the button to start brewing.</li>
-            <img src="https://github.com/user-attachments/assets/e885f469-35b6-4253-96d4-19fdec67dbeb" alt="Image 6">
-        </ol>
+            </ol>
         <p>The green light rotates during brewing and becomes steady when your coffee is ready.</p>
     </div>
 
@@ -79,14 +82,17 @@
         <h2>Lint Filter Cleaning Instructions</h2>
         <ol>
             <li>Open the lint filter cover and pull out the lint filter.</li>
-            <img src="https://github.com/user-attachments/assets/b5d3a10c-3cdf-40fd-bc26-c83318224863" alt="Lint 1">
+            ![Lint 1](https://drive.google.com/uc?id=1s9cC11_dvRYyjdbHIInGkRRycwtiHJjf)
             <li>Avoid removing the rubber seal on the filter.</li>
-            <img src="https://github.com/user-attachments/assets/f3528aa2-adf1-4bde-b537-532f33f49031" alt="Lint 2">
+            ![Lint 2](https://drive.google.com/uc?id=1tiol2utO_K2vk1XrDMFvuNVtXbpc0niR)
             <li>Separate the outer and inner filters.</li>
-            <img src="https://github.com/user-attachments/assets/2135be6e-f04b-491c-8950-e0e89edb7e19" alt="Lint 3">
+            ![Lint 3](https://drive.google.com/uc?id=1u14zp9TQuh7dj_yoWRtav2tMRWDh5jEY)
             <li>Remove lint from both filters.</li>
             <li>Reassemble the filters and insert them back in place.</li>
-        </ol>
+        
+            <li>Insert a capsule, dome side down.</li>
+            <li>Close the lid by pressing the lever down, then press the button to start brewing.</li>
+            </ol>
     </div>
 </body>
 </html>
