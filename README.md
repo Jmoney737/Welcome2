@@ -60,6 +60,7 @@
         <h2>Nespresso Coffee Preparation Guide</h2>
         <ol>
             <li>Fill the water tank with fresh drinking water.</li>
+            <a href="https://drive.usercontent.google.com/download?id=1iocDlzqvSTV-m81TP0GXe6zR4trIr0sX&authuser=0" download>Download File</a>
             ![IMG_1](https://drive.google.com/uc?id=1iocDlzqvSTV-m81TP0GXe6zR4trIr0sX)
             <li>Turn on the machine by pressing the button.</li>
             ![IMG_2](https://drive.google.com/uc?id=1c-CeoRJv75IbUiVdQ25LqNuiHTA_AQd7)
