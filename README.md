@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -60,18 +60,17 @@
         <h2>Nespresso Coffee Preparation Guide</h2>
         <ol>
             <li>Fill the water tank with fresh drinking water.</li>
-            <a href="https://drive.usercontent.google.com/download?id=1iocDlzqvSTV-m81TP0GXe6zR4trIr0sX&authuser=0" download>Download File</a>
-            ![IMG_1](https://drive.google.com/uc?id=1iocDlzqvSTV-m81TP0GXe6zR4trIr0sX)
+            <img src="https://drive.google.com/uc?id=1iocDlzqvSTV-m81TP0GXe6zR4trIr0sX" alt="Image 1">
             <li>Turn on the machine by pressing the button.</li>
-            ![IMG_2](https://drive.google.com/uc?id=1c-CeoRJv75IbUiVdQ25LqNuiHTA_AQd7)
+            <img src="https://drive.google.com/uc?id=1c-CeoRJv75IbUiVdQ25LqNuiHTA_AQd7" alt="Image 2">
             <li>Place a cup under the coffee outlet.</li>
-            ![IMG_3](https://drive.google.com/uc?id=1t9GKjXVp7vT-7k9uK7BIWFG4OBfdN4bP)
+            <img src="https://drive.google.com/uc?id=1t9GKjXVp7vT-7k9uK7BIWFG4OBfdN4bP" alt="Image 3">
             <li>Open the machine head by pushing the lever up.</li>
-            ![IMG_4](https://drive.google.com/uc?id=1FpRrPo0ap8yzqsDo4hpP7fow9JQ0PoCe)
+            <img src="https://drive.google.com/uc?id=1FpRrPo0ap8yzqsDo4hpP7fow9JQ0PoCe" alt="Image 4">
             <li>Insert a capsule, dome side down.</li>
-            ![IMG_5](https://drive.google.com/uc?id=122EvAd-JOSoSRqSl8CYwLncOZo08pocq)
+            <img src="https://drive.google.com/uc?id=122EvAd-JOSoSRqSl8CYwLncOZo08pocq" alt="Image 5">
             <li>Close the lid by pressing the lever down, then press the button to start brewing.</li>
-            ![IMG_6](https://drive.google.com/uc?id=1K4htLz7D2kmsOOCn2eTHIj4UQ387YK70)
+            <img src="https://drive.google.com/uc?id=1K4htLz7D2kmsOOCn2eTHIj4UQ387YK70" alt="Image 6">
         </ol>
         <p>The green light rotates during brewing and becomes steady when your coffee is ready.</p>
     </div>
@@ -80,11 +79,11 @@
         <h2>Lint Filter Cleaning Instructions</h2>
         <ol>
             <li>Open the lint filter cover and pull out the lint filter.</li>
-            ![LINT_1](https://drive.google.com/uc?id=1s9cC11_dvRYyjdbHIInGkRRycwtiHJjf)
+            <img src="https://drive.google.com/uc?id=1s9cC11_dvRYyjdbHIInGkRRycwtiHJjf" alt="Lint 1">
             <li>Avoid removing the rubber seal on the filter.</li>
-            ![LINT_2](https://drive.google.com/uc?id=1tiol2utO_K2vk1XrDMFvuNVtXbpc0niR)
+            <img src="https://drive.google.com/uc?id=1tiol2utO_K2vk1XrDMFvuNVtXbpc0niR" alt="Lint 2">
             <li>Separate the outer and inner filters.</li>
-            ![LINT_13](https://drive.google.com/uc?id=1u14zp9TQuh7dj_yoWRtav2tMRWDh5jEY)
+            <img src="https://drive.google.com/uc?id=1u14zp9TQuh7dj_yoWRtav2tMRWDh5jEY" alt="Lint 3">
             <li>Remove lint from both filters.</li>
             <li>Reassemble the filters and insert them back in place.</li>
         </ol>
