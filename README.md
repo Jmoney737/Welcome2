@@ -3,269 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Our Home</title>
+    <title>Smart Home Dashboard</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;600&display=swap');
-        @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
-
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Open Sans', sans-serif; line-height: 1.6; color: #333; background-color: #FAF9F6; padding: 20px; }
-        header { text-align: center; margin-bottom: 30px; }
-        header h1 {
-            font-family: 'Bodoni Moda', serif;
-            font-size: 9rem;
-            color: #A88C7D;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
-        header p { font-size: 1.2rem; color: #555; }
-        .smart-home-link {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 10px 20px;
-            background-color: #A88C7D;
-            color: #FFF;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        .smart-home-link:hover { background-color: #946b5d; }
-        .section {
-            background: linear-gradient(135deg, #FFF, #F7F2EE);
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            max-width: 1200px;
             padding: 20px;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
         }
-        .section h2 {
-            font-family: 'Bodoni Moda', serif;
-            font-size: 2rem;
-            color: #A88C7D;
-            margin-bottom: 10px;
+        .widget {
+            background-color: #1e1e1e;
+            border: 1px solid #2e7d32;
+            border-radius: 8px;
+            padding: 15px;
             text-align: center;
             display: flex;
+            flex-direction: column;
             justify-content: space-between;
-            align-items: center;
         }
-        .section h2 i {
-            margin-right: 10px;
-            transition: transform 0.3s ease, color 0.3s ease;
+        .widget h2 {
+            font-size: 1.2rem;
+            color: #a5d6a7;
         }
-        .section h2:hover i {
-            transform: scale(1.2);
-            color: #946b5d;
+        .clock {
+            font-size: 3rem;
+            font-weight: bold;
         }
-        .section-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.5s ease-out, padding 0.3s ease-out;
+        .weather img {
+            max-width: 80px;
+            margin: 0 auto;
         }
-        .section-content.active {
-            max-height: 1000px;
-            padding: 10px 0;
-            background-color: #FFF3E6;
-            border-radius: 5px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        .button-group {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 10px;
         }
-        ol, ul { text-align: left; }
-        img { max-width: 100%; border-radius: 5px; margin: 10px 0; }
-        .toggle-btn {
-            background: none;
+        .button-group button {
+            background-color: #2e7d32;
             border: none;
-            font-size: 1.5rem;
+            border-radius: 5px;
+            color: white;
+            padding: 10px 15px;
             cursor: pointer;
-            color: #A88C7D;
-            transition: transform 0.2s ease, color 0.3s ease;
+            transition: background-color 0.3s;
         }
-        .toggle-btn:active {
-            transform: scale(0.95);
+        .button-group button:hover {
+            background-color: #1b5e20;
         }
-        .toggle-btn:hover { color: #946b5d; }
-        .divider {
-            border-top: 2px solid #DDD;
-            margin: 20px 0;
+        .slider {
+            width: 80%;
+            margin: 10px auto;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Our Home</h1>
-        <p>We’re so glad to have you here. Click on the icons for quick navigation.</p>
-        <a href="https://jmoney737.github.io/Routine-Activator/" target="_blank" class="smart-home-link">Smart Home Control</a>
-    </header>
-
-    <div class="search-bar">
-        <input type="text" id="search-input" placeholder="Search for a section...">
-        <button onclick="searchSections()">Search</button>
-    </div>
-
-    <div class="divider"></div>
-
-    <!-- Appliances & Devices -->
-    <div class="section">
-        <h2>
-            <i class="fas fa-tv"></i> Appliances & Devices
-            <button class="toggle-btn" onclick="toggleSection(this)">
-                <i class="fas fa-chevron-down"></i>
-            </button>
-        </h2>
-        <div class="section-content">
-            <ul>
-                <li><strong>Thermostat:</strong> Don’t Touch.</li>
-                <li><strong>Smart TV:</strong> YouTube TV, Hulu, Netflix, Disney, Prime Video.</li>
-                <li>
-                    <strong>Washer/Dryer:</strong> Use the AI Opti Wash & Dry Setting. Detergent is automatically dispensed. Clean filter before use.
-                    <a href="#lint-filter-cleaning" style="margin-left: 5px;">See Lint Filter Cleaning Instructions</a>
-                </li>
-            </ul>
+    <div class="dashboard">
+        <!-- Alarm Widget -->
+        <div class="widget alarm">
+            <h2>Alarm</h2>
+            <p id="alarm-status">Armed Home</p>
+            <div class="button-group">
+                <button onclick="toggleAlarm('arm')">Arm</button>
+                <button onclick="toggleAlarm('disarm')">Disarm</button>
+            </div>
         </div>
-    </div>
-
-    <div class="divider"></div>
-
-    <!-- Nespresso Coffee Preparation Guide -->
-    <div class="section">
-        <h2>
-            <i class="fas fa-coffee"></i> Nespresso Coffee Preparation Guide
-            <button class="toggle-btn" onclick="toggleSection(this)">
-                <i class="fas fa-chevron-down"></i>
-            </button>
-        </h2>
-        <div class="section-content">
-            <ol>
-                <p><strong>Note:</strong> Capsules are to the left in the jar. The automatic motor raises and lowers the machine's head when the lever is pushed up or down.</p>
-                <li>Fill the water tank with fresh drinking water.</li>
-                <li>Turn on the machine by pressing the button.</li>
-                <li>GREEN lights will blink while the machine is heating up.</li>
-                <li>Steady GREEN light indicates the machine is ready.</li>
-                <li>Place a cup under the coffee outlet.</li>
-                <li>Open the machine head by pushing the lever up.</li>
-                <li>Insert a capsule, dome side down.</li>
-                <li>Close the lid by pressing the lever down, then press the button to start brewing.</li>
-            </ol>
+        
+        <!-- Clock Widget -->
+        <div class="widget clock">
+            <h2>Time</h2>
+            <div id="time"></div>
+            <div id="date"></div>
         </div>
-    </div>
 
-    <div class="divider"></div>
-
-    <!-- Lint Filter Cleaning Instructions -->
-    <div class="section" id="lint-filter-cleaning">
-        <h2>
-            <i class="fas fa-filter"></i> Lint Filter Cleaning Instructions
-            <button class="toggle-btn" onclick="toggleSection(this)">
-                <i class="fas fa-chevron-down"></i>
-            </button>
-        </h2>
-        <div class="section-content">
-            <ol>
-                <li>Open the lint filter cover and pull out the lint filter.</li>
-                <li>Avoid removing the rubber seal on the filter.</li>
-                <li>Separate the outer and inner filters.</li>
-                <li>Remove lint from both filters.</li>
-                <li>Reassemble the filters and insert them back in place.</li>
-            </ol>
+        <!-- Lights Control Widget -->
+        <div class="widget lights">
+            <h2>Lights</h2>
+            <p>Living Room</p>
+            <div class="button-group">
+                <button onclick="toggleLights('on')">On</button>
+                <button onclick="toggleLights('off')">Off</button>
+            </div>
+            <input type="range" min="0" max="100" value="50" class="slider" id="dimmer" onchange="setBrightness(this.value)">
+            <p>Brightness: <span id="brightness-value">50%</span></p>
         </div>
-    </div>
 
-    <div class="divider"></div>
-
-    <!-- Guide to Local Bars and Restaurants -->
-    <div class="section">
-        <h2>
-            <i class="fas fa-utensils"></i> Guide to Local Bars and Restaurants
-            <button class="toggle-btn" onclick="toggleSection(this)">
-                <i class="fas fa-chevron-down"></i>
-            </button>
-        </h2>
-        <div class="section-content">
-            <ul>
-                <li>
-                    <strong>GreenHouse Restaurant and Bar</strong><br>
-                    Enjoy New American cuisine and an award-winning bar. 
-                    <a href="https://greenhouserestaurantdenton.com/" target="_blank">Visit Website</a>
-                </li>
-                <li>
-                    <strong>Rooster's Roadhouse</strong><br>
-                    Casual BBQ and burgers in a relaxed atmosphere. 
-                    <a href="https://roosters-roadhouse.com/" target="_blank">Visit Website</a>
-                </li>
-                <li>
-                    <strong>Barley & Board</strong><br>
-                    A gastropub with craft beers and elevated comfort food. 
-                    <a href="https://www.barleyandboard.com/" target="_blank">Visit Website</a>
-                </li>
-            </ul>
+        <!-- Weather Widget -->
+        <div class="widget weather">
+            <h2>Weather</h2>
+            <img id="weather-icon" src="" alt="Weather Icon">
+            <p id="weather-data">Loading...</p>
         </div>
-    </div>
 
-    <div class="divider"></div>
+        <!-- Hourly Forecast Widget -->
+        <div class="widget forecast">
+            <h2>Hourly Forecast</h2>
+            <ul id="forecast-list" style="list-style: none; padding: 0;"></ul>
+        </div>
 
-    <!-- Local Attractions -->
-    <div class="section">
-        <h2>
-            <i class="fas fa-map-marker-alt"></i> Local Attractions
-            <button class="toggle-btn" onclick="toggleSection(this)">
-                <i class="fas fa-chevron-down"></i>
-            </button>
-        </h2>
-        <div class="section-content">
-            <ul>
-                <li>
-                    <strong>Denton Courthouse-on-the-Square Museum</strong><br>
-                    Learn about local history in this iconic courthouse. 
-                    <a href="https://dentoncounty.gov/Departments/Courthouse-on-the-Square" target="_blank">Visit Website</a>
-                </li>
-                <li>
-                    <strong>Ray Roberts Lake State Park</strong><br>
-                    A haven for nature enthusiasts with hiking, biking, and fishing. 
-                    <a href="https://tpwd.texas.gov/state-parks/ray-roberts-lake" target="_blank">Visit Website</a>
-                </li>
-                <li>
-                    <strong>Arts & Jazz Festival</strong><br>
-                    An annual festival featuring live music, art, and local food. 
-                    <a href="https://dentonjazzfest.com/" target="_blank">Visit Website</a>
-                </li>
+        <!-- Calendar Widget -->
+        <div class="widget calendar">
+            <h2>Calendar</h2>
+            <p>Upcoming Holidays</p>
+            <ul id="calendar-events">
+                <li>Loading...</li>
             </ul>
         </div>
     </div>
 
     <script>
-        function toggleSection(button) {
-            const sectionContent = button.parentElement.nextElementSibling;
+        // Clock Widget
+        function updateTime() {
+            const now = new Date();
+            document.getElementById('time').textContent = now.toLocaleTimeString();
+            document.getElementById('date').textContent = now.toLocaleDateString();
+        }
+        setInterval(updateTime, 1000);
+        updateTime();
 
-            if (sectionContent.classList.contains('active')) {
-                sectionContent.style.maxHeight = null;
-                sectionContent.style.padding = "0";
-                sectionContent.classList.remove('active');
-            } else {
-                sectionContent.style.maxHeight = sectionContent.scrollHeight + "px";
-                sectionContent.style.padding = "10px 0";
-                sectionContent.classList.add('active');
-            }
-
-            const icon = button.querySelector('i');
-            if (sectionContent.classList.contains('active')) {
-                icon.classList.replace('fa-chevron-down', 'fa-chevron-up');
-            } else {
-                icon.classList.replace('fa-chevron-up', 'fa-chevron-down');
-            }
+        // Lights Widget
+        function toggleLights(state) {
+            console.log(`Lights turned ${state}`);
+            alert(`Lights turned ${state}`);
+        }
+        function setBrightness(value) {
+            document.getElementById('brightness-value').textContent = `${value}%`;
+            console.log(`Brightness set to ${value}%`);
         }
 
-        function searchSections() {
-            const query = document.getElementById('search-input').value.toLowerCase();
-            const sections = document.querySelectorAll('.section');
+        // Alarm Widget
+        function toggleAlarm(state) {
+            const alarmStatus = document.getElementById('alarm-status');
+            if (state === 'arm') {
+                alarmStatus.textContent = 'Armed Home';
+            } else {
+                alarmStatus.textContent = 'Disarmed';
+            }
+            console.log(`Alarm ${state}`);
+        }
 
-            sections.forEach(section => {
-                const text = section.textContent.toLowerCase();
-                if (text.includes(query)) {
-                    section.style.display = 'block';
-                } else {
-                    section.style.display = 'none';
-                }
+        // Weather Widget
+        fetch('https://api.openweathermap.org/data/2.5/weather?q=New York&appid=your_api_key&units=imperial')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('weather-icon').src = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
+                document.getElementById('weather-data').textContent = `${data.main.temp}°F, ${data.weather[0].description}`;
             });
-        }
+
+        // Hourly Forecast Widget
+        fetch('https://api.openweathermap.org/data/2.5/forecast?q=New York&appid=your_api_key&units=imperial')
+            .then(response => response.json())
+            .then(data => {
+                const forecastList = document.getElementById('forecast-list');
+                forecastList.innerHTML = '';
+                data.list.slice(0, 5).forEach(item => {
+                    const li = document.createElement('li');
+                    li.textContent = `${new Date(item.dt * 1000).toLocaleTimeString()}: ${item.main.temp}°F, ${item.weather[0].description}`;
+                    forecastList.appendChild(li);
+                });
+            });
+
+        // Calendar Widget (Mock Data for Holidays)
+        const holidays = [
+            { date: 'Oct 31', name: 'Halloween' },
+            { date: 'Nov 24', name: 'Thanksgiving' },
+            { date: 'Dec 25', name: 'Christmas' }
+        ];
+        const calendarEvents = document.getElementById('calendar-events');
+        calendarEvents.innerHTML = holidays.map(holiday => `<li>${holiday.date} - ${holiday.name}</li>`).join('');
     </script>
 </body>
 </html>
