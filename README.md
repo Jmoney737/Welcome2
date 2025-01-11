@@ -103,68 +103,6 @@
 
     <div class="divider"></div>
 
-    <!-- Guide to Local Bars and Restaurants -->
-    <div class="section">
-        <h2>
-            <i class="fas fa-utensils"></i> Guide to Local Bars and Restaurants
-            <button class="toggle-btn" onclick="toggleSection(this)">
-                <i class="fas fa-chevron-down"></i>
-            </button>
-        </h2>
-        <div class="section-content">
-            <ul>
-                <li>
-                    <strong>GreenHouse Restaurant and Bar</strong><br>
-                    Enjoy New American cuisine and an award-winning bar. 
-                    <a href="https://greenhouserestaurantdenton.com/" target="_blank">Visit Website</a>
-                </li>
-                <li>
-                    <strong>Rooster's Roadhouse</strong><br>
-                    Casual BBQ and burgers in a relaxed atmosphere. 
-                    <a href="https://roosters-roadhouse.com/" target="_blank">Visit Website</a>
-                </li>
-                <li>
-                    <strong>Barley & Board</strong><br>
-                    A gastropub with craft beers and elevated comfort food. 
-                    <a href="https://www.barleyandboard.com/" target="_blank">Visit Website</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="divider"></div>
-
-    <!-- Local Attractions -->
-    <div class="section">
-        <h2>
-            <i class="fas fa-map-marker-alt"></i> Local Attractions
-            <button class="toggle-btn" onclick="toggleSection(this)">
-                <i class="fas fa-chevron-down"></i>
-            </button>
-        </h2>
-        <div class="section-content">
-            <ul>
-                <li>
-                    <strong>Denton Courthouse-on-the-Square Museum</strong><br>
-                    Learn about local history in this iconic courthouse. 
-                    <a href="https://dentoncounty.gov/Departments/Courthouse-on-the-Square" target="_blank">Visit Website</a>
-                </li>
-                <li>
-                    <strong>Ray Roberts Lake State Park</strong><br>
-                    A haven for nature enthusiasts with hiking, biking, and fishing. 
-                    <a href="https://tpwd.texas.gov/state-parks/ray-roberts-lake" target="_blank">Visit Website</a>
-                </li>
-                <li>
-                    <strong>Arts & Jazz Festival</strong><br>
-                    An annual festival featuring live music, art, and local food. 
-                    <a href="https://dentonjazzfest.com/" target="_blank">Visit Website</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="divider"></div>
-
     <!-- Appliances & Devices -->
     <div class="section">
         <h2>
@@ -228,6 +166,68 @@
                 <li>Remove lint from both filters.</li>
                 <li>Reassemble the filters and insert them back in place.</li>
             </ol>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Guide to Local Bars and Restaurants -->
+    <div class="section">
+        <h2>
+            <i class="fas fa-utensils"></i> Guide to Local Bars and Restaurants
+            <button class="toggle-btn" onclick="toggleSection(this)">
+                <i class="fas fa-chevron-down"></i>
+            </button>
+        </h2>
+        <div class="section-content">
+            <ul>
+                <li>
+                    <strong>GreenHouse Restaurant and Bar</strong><br>
+                    Enjoy New American cuisine and an award-winning bar. 
+                    <a href="https://greenhouserestaurantdenton.com/" target="_blank">Visit Website</a>
+                </li>
+                <li>
+                    <strong>Rooster's Roadhouse</strong><br>
+                    Casual BBQ and burgers in a relaxed atmosphere. 
+                    <a href="https://roosters-roadhouse.com/" target="_blank">Visit Website</a>
+                </li>
+                <li>
+                    <strong>Barley & Board</strong><br>
+                    A gastropub with craft beers and elevated comfort food. 
+                    <a href="https://www.barleyandboard.com/" target="_blank">Visit Website</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Local Attractions -->
+    <div class="section">
+        <h2>
+            <i class="fas fa-map-marker-alt"></i> Local Attractions
+            <button class="toggle-btn" onclick="toggleSection(this)">
+                <i class="fas fa-chevron-down"></i>
+            </button>
+        </h2>
+        <div class="section-content">
+            <ul>
+                <li>
+                    <strong>Denton Courthouse-on-the-Square Museum</strong><br>
+                    Learn about local history in this iconic courthouse. 
+                    <a href="https://dentoncounty.gov/Departments/Courthouse-on-the-Square" target="_blank">Visit Website</a>
+                </li>
+                <li>
+                    <strong>Ray Roberts Lake State Park</strong><br>
+                    A haven for nature enthusiasts with hiking, biking, and fishing. 
+                    <a href="https://tpwd.texas.gov/state-parks/ray-roberts-lake" target="_blank">Visit Website</a>
+                </li>
+                <li>
+                    <strong>Arts & Jazz Festival</strong><br>
+                    An annual festival featuring live music, art, and local food. 
+                    <a href="https://dentonjazzfest.com/" target="_blank">Visit Website</a>
+                </li>
+            </ul>
         </div>
     </div>
 
