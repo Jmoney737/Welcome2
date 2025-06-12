@@ -304,7 +304,7 @@
 
     <div class="divider"></div>
 
-    <!-- Appliances Section -->
+    <!-- Example Section -->
     <div class="section" id="appliances">
         <h2>
             <i class="fas fa-tv"></i> Appliances & Devices
@@ -323,9 +323,10 @@
             </ul>
         </div>
     </div>
+    
     <div class="divider"></div>
 
-    <!-- Nespresso Coffee Guide -->
+    <!-- Nespresso Coffee Preparation Guide -->
     <div class="section">
         <h2>
             <i class="fas fa-coffee"></i> Nespresso Coffee Preparation Guide
@@ -337,16 +338,23 @@
             <ol>
                 <p><strong>Note:</strong> Capsules are to the left in the jar. The automatic motor raises and lowers the machine's head when the lever is pushed up or down.</p>
                 <li>Fill the water tank with fresh drinking water.</li>
+                <img src="https://github.com/user-attachments/assets/b2e02e7d-1c8a-4cee-84ad-52ac8514c588" alt="Fill Water Tank">
                 <li>Turn on the machine by pressing the button.</li>
+                <img src="https://github.com/user-attachments/assets/797a5710-f9b1-4916-a2c6-cb403407c967" alt="Machine Button">
                 <li>GREEN lights will blink while the machine is heating up.</li>
+                <img src="https://github.com/user-attachments/assets/4472e73a-19de-4921-9d1b-0a32f4deea4a" alt="Heating Indicator">
                 <li>Steady GREEN light indicates the machine is ready.</li>
+                <img src="https://github.com/user-attachments/assets/f9577087-ca37-42a7-9068-29e00fcad0f8" alt="Ready Light">
                 <li>Place a cup under the coffee outlet.</li>
+                <img src="https://github.com/user-attachments/assets/1abf0322-36b9-47ab-8629-199779d02c84" alt="Place Cup">
                 <li>Open the machine head by pushing the lever up.</li>
+                <img src="https://github.com/user-attachments/assets/03cb69aa-3172-47e4-9511-84bfad7a0fc4" alt="Open Machine Head">
                 <li>Insert a capsule, dome side down.</li>
                 <li>Close the lid by pressing the lever down, then press the button to start brewing.</li>
             </ol>
         </div>
     </div>
+
     <div class="divider"></div>
 
     <!-- Lint Filter Cleaning Instructions -->
@@ -360,13 +368,17 @@
         <div class="section-content">
             <ol>
                 <li>Open the lint filter cover and pull out the lint filter.</li>
+                <img src="https://github.com/user-attachments/assets/26512380-ef32-44d5-ae12-3c88316588c6" alt="Lint Filter Cover">
                 <li>Avoid removing the rubber seal on the filter.</li>
+                <img src="https://github.com/user-attachments/assets/18dacdf1-a21b-4aef-8b52-3ed60f90d134" alt="Rubber Seal">
                 <li>Separate the outer and inner filters.</li>
+                <img src="https://github.com/user-attachments/assets/2c1c4ce0-a6c2-4c5a-9e40-c09a6d7b2394" alt="Separate Filters">
                 <li>Remove lint from both filters.</li>
                 <li>Reassemble the filters and insert them back in place.</li>
             </ol>
         </div>
     </div>
+
     <div class="divider"></div>
 
     <!-- Guide to Local Bars and Restaurants -->
@@ -397,6 +409,7 @@
             </ul>
         </div>
     </div>
+
     <div class="divider"></div>
 
     <!-- Local Attractions -->
@@ -427,12 +440,13 @@
             </ul>
         </div>
     </div>
+
     <div class="divider"></div>
 
-    <!-- Office Storage -->
+    <!-- Office Storage (Drawers & Cabinets) -->
     <div class="section">
         <h2>
-            <i class="fas fa-drawer"></i> Office Storage
+            <i class="fas fa-archive"></i> Office Storage
         </h2>
         <div class="drawer-buttons">
             <button class="drawer-button" onclick="toggleDrawer('left-drawer')">Left Office Drawer</button>
@@ -443,7 +457,7 @@
 
         <!-- Left Office Drawer -->
         <div id="left-drawer" class="section-content">
-            <h3>Left Office Drawer:</h3>
+            <h3>Left Office Drawer</h3>
             <ul>
                 <h4>Writing and Drawing Supplies:</h4>
                 <li>Sharpie markers (various colors)</li>
@@ -463,11 +477,12 @@
                 <h4>Miscellaneous:</h4>
                 <li>Small plastic containers for organization</li>
             </ul>
+            <img src="https://github.com/user-attachments/assets/34d8df5b-9e33-4c74-a16c-872f71c9dcc8" alt="Left Drawer">
         </div>
 
         <!-- Right Office Drawer -->
         <div id="right-drawer" class="section-content">
-            <h3>Right Office Drawer:</h3>
+            <h3>Right Office Drawer</h3>
             <ul>
                 <h4>Cables and Chargers:</h4>
                 <li>USB, USB-C, and Lightning cables</li>
@@ -490,11 +505,12 @@
                 <li>Roll of electrical or duct tape</li>
                 <li>Cylindrical containers (likely for spare parts)</li>
             </ul>
+            <img src="https://github.com/user-attachments/assets/905acb09-4ec7-44d5-b958-a5ad30ed539c" alt="Right Drawer">
         </div>
 
         <!-- Left Office Cabinet -->
         <div id="left-cabinet" class="section-content">
-            <h3>Left Office Cabinet:</h3>
+            <h3>Left Office Cabinet</h3>
             <ul>
                 <h4>Top Shelf:</h4>
                 <li>Woven basket (contains small items)</li>
@@ -515,11 +531,12 @@
                 <li>Folded black fabric (with yellow text)</li>
                 <li>Paperwork or manuals</li>
             </ul>
+            <img src="https://github.com/user-attachments/assets/3b6cdf12-7ece-4c46-905a-718936d6d734" alt="Left Cabinet">
         </div>
 
         <!-- Right Office Cabinet -->
         <div id="right-cabinet" class="section-content">
-            <h3>Right Office Cabinet:</h3>
+            <h3>Right Office Cabinet</h3>
             <ul>
                 <h4>Networking and Smart Devices:</h4>
                 <li>TP-Link Deco Wi-Fi 7 BE10000 (mesh system boxes)</li>
@@ -541,52 +558,11 @@
                 <li>ANEXT cardboard box (possibly for accessories)</li>
                 <li>Clear pump bottles (cleaning solution or sanitizer)</li>
             </ul>
+            <img src="https://github.com/user-attachments/assets/2e5ee07a-a166-4622-8434-e97199dd90f0" alt="Right Cabinet">
         </div>
     </div>
 
     <script>
-        // Slideshow Gallery JS
-        let slideIndex = 1;
-        let slideTimer = null;
-
-        function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("dot");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-        }
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-            resetSlideTimer();
-        }
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-            resetSlideTimer();
-        }
-        function autoSlides() {
-            slideIndex++;
-            showSlides(slideIndex);
-            slideTimer = setTimeout(autoSlides, 3000); // Change image every 3 seconds
-        }
-        function resetSlideTimer() {
-            clearTimeout(slideTimer);
-            slideTimer = setTimeout(autoSlides, 3000);
-        }
-        window.addEventListener('DOMContentLoaded', () => {
-            showSlides(slideIndex);
-            slideTimer = setTimeout(autoSlides, 3000);
-        });
-
-        // (Other JS for widgets, search, toggle etc)
         async function fetchWeather() {
             const apiKey = '7841816e864c04d9b862cb645522ca43';
             const city = 'Denton';
@@ -640,6 +616,7 @@
         window.onload = fetchWeather;
 
         function toggleSection(button, sectionId = null) {
+            // Identify the section content to toggle
             const sectionContent = sectionId 
                 ? document.querySelector(`#${sectionId} .section-content`) 
                 : button.closest('.section').querySelector('.section-content');
