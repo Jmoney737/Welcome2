@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -271,13 +270,13 @@
     <!-- Photo Gallery Rotating Slideshow -->
     <div class="slideshow-container" id="photo-gallery">
         <div class="mySlides fade">
-            <img src="/mnt/data/IMG_3871.jpg" alt="Dog after bath" />
+            <img src="IMG_3871.jpg" alt="Dog after bath" />
         </div>
         <div class="mySlides fade">
-            <img src="/mnt/data/IMG_3650.JPG" alt="Curly-haired dog" />
+            <img src="IMG_3650.JPG" alt="Curly-haired dog" />
         </div>
         <div class="mySlides fade">
-            <img src="/mnt/data/IMG_2675.PNG" alt="Dog with tennis ball" />
+            <img src="IMG_2675.PNG" alt="Dog with tennis ball" />
         </div>
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -305,7 +304,29 @@
 
     <div class="divider"></div>
 
-    <!-- (rest of your page content goes here, not shown for brevity) -->
+    <!-- Example Section -->
+    <div class="section" id="appliances">
+        <h2>
+            <i class="fas fa-tv"></i> Appliances & Devices
+            <button class="toggle-btn" onclick="toggleSection(this, 'appliances')" aria-label="Toggle section">
+                <i class="fas fa-chevron-down"></i>
+            </button>
+        </h2>
+        <div class="section-content">
+            <ul>
+                <li><strong>Thermostat:</strong> Don’t Touch.</li>
+                <li><strong>Smart TV:</strong> YouTube TV, Hulu, Netflix, Disney, Prime Video.</li>
+                <li>
+                    <strong>Washer/Dryer:</strong> Use the AI Opti Wash & Dry Setting. Detergent is automatically dispensed. Clean filter before use.
+                    <a href="#lint-filter-cleaning" style="margin-left: 5px;">See Lint Filter Cleaning Instructions</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="divider"></div>
+
+    <!-- (Other sections here, as before, omitted for brevity) -->
 
     <script>
         // Slideshow Gallery JS
@@ -349,7 +370,7 @@
             slideTimer = setTimeout(autoSlides, 3000);
         });
 
-        // (Other JS on your page goes below)
+        // (Other JS for widgets, search, toggle etc)
         async function fetchWeather() {
             const apiKey = '7841816e864c04d9b862cb645522ca43';
             const city = 'Denton';
